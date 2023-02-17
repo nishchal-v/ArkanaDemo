@@ -1,0 +1,22 @@
+PODS:
+  - ArkanaDemoSecrets (1.0.0):
+    - ArkanaDemoSecretsInterfaces (~> 1.0.0)
+  - ArkanaDemoSecretsInterfaces (1.0.0)
+
+DEPENDENCIES:
+  - ArkanaDemoSecrets (from `./ArkanaKeys/ArkanaDemoSecrets`)
+  - ArkanaDemoSecretsInterfaces (from `./ArkanaKeys/ArkanaDemoSecretsInterfaces`)
+
+EXTERNAL SOURCES:
+  ArkanaDemoSecrets:
+    :path: "./ArkanaKeys/ArkanaDemoSecrets"
+  ArkanaDemoSecretsInterfaces:
+    :path: "./ArkanaKeys/ArkanaDemoSecretsInterfaces"
+
+SPEC CHECKSUMS:
+  ArkanaDemoSecrets: 35a6346f5163ef91a669654bd1c0bd7ed52ad300
+  ArkanaDemoSecretsInterfaces: 3048dbccd7d9f0bff4314aaaa02503502146c3d2
+
+PODFILE CHECKSUM: a136474d237c03b8188cf3528355c5e68ffa3e9a
+
+COCOAPODS: 1.11.3

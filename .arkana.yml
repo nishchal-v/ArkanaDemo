@@ -1,0 +1,15 @@
+import_name: 'ArkanaDemoSecrets' # Optional. Name of the framework to be imported. Defaults to ArkanaKeys.
+namespace: 'Secrets' # Optional. Namespace used to access the secrets in the codebase. Defaults to ArkanaKeys.
+pod_name: 'ArkanaDemoSecrets' # Optional. Name of the pod to be declared in your Podfile. Defaults to ArkanaKeys.
+swift_declaration_strategy: let # Optional. One of: lazy var, var, let. Defaults to let.
+should_generate_unit_tests: false # Optional. One of: true, false. Defaults to true.
+package_manager: cocoapods # Optional. This setting defines which type of dependency management you're going ot use to integrate Arkana into your project. One of: spm, cocoapods. If you use both in your project, use cocoapods here. Defaults to spm.
+environments: # Optional. List of environments that will be used to generate secret keys when you have keys that are different between environments (e.g. debug/staging/prod). Defaults to empty.
+  - Development
+  - Production
+  - Staging
+  - UAT
+global_secrets: # Optional. List of secrets that are the same regardless of which environment is being built. Defaults to empty.
+  - GlobalKey
+environment_secrets: # Optional. This will create a secret for each entry in this list, one for each env, appending a suffix corresponding to the name of the env. Defaults to empty.
+  - SentryDNSKey
